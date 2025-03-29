@@ -1,13 +1,7 @@
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Mencegah pengiriman form
-
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-
-    // Tampilkan alert sebagai konfirmasi
-    alert(`Terima kasih, ${name}! Pesan Anda telah dikirim.`);
-
-    // Reset form setelah pengiriman
-    document.getElementById('contactForm').reset();
+// Menambahkan interaktivitas sederhana
+document.addEventListener('DOMContentLoaded', function() {
+    const btn = document.querySelector('.btn');
+    btn.addEventListener('click', function() {
+        alert('Terima kasih telah mengunjungi HMJ Sastra Indonesia!');
+    });
 });
