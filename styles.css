@@ -1,120 +1,103 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
+    background-color: #f4f4f4;
 }
 
 header {
-    background: #007BFF;
-    color: white;
-    padding: 10px 0;
+    background: #4A90E2;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
 }
 
-header .logo {
-    text-align: center;
+header .logo h1 {
+    margin: 0;
+    font-size: 2.5em;
 }
 
 nav ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
+    padding: 0;
 }
 
 nav ul li {
-    margin: 0 15px;
+    display: inline;
+    margin: 0 20px;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .hero {
-    background: url('path/to/your/background-image.jpg') no-repeat center center/cover;
-    color: white;
+    background: #007BFF;
+    color: #fff;
+    padding: 60px 0;
     text-align: center;
-    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+}
+
+.hero .btn {
+    background: #fff;
+    color: #007BFF;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
 section {
-    padding: 20px;
+    padding: 40px 20px;
+    text-align: center;
+    background: #fff;
     margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-    color: #007BFF;
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-table, th, td {
-    border: 1px solid #007BFF;
-}
-
-th, td {
-    padding: 10px;
-    text-align: left;
-}
-
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.gallery img {
+.activity {
+    display: inline-block;
     width: 30%;
-    margin: 1.5%;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    margin: 10px 0 5px;
-}
-
-form input, form textarea {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #007BFF;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
     border-radius: 5px;
+    background: #f9f9f9;
+    transition: transform 0.3s;
 }
 
-button {
-    background: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
+.activity:hover {
+    transform: scale(1.05);
 }
 
-button:hover {
-    background: #0056b3;
+.activity i {
+    font-size: 40px;
+    color: #4A90E2;
 }
 
 footer {
-    background: #007BFF;
-    color: white;
+    background: #333;
+    color: #fff;
     text-align: center;
-    padding: 10px 0;
-}
-
-.social-media {
-    margin-top: 10px;
-}
-
-.social-media a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
